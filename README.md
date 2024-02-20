@@ -40,3 +40,21 @@ O objeto final pode varia de acordo com a necessidade.
 
 ### Contras
 - Código final fica muito complexo;
+- 
+
+## Design 3 - Prototype
+
+A intenção acima significa que você pode criar objetos protótipos que têm um método específico (clone) para clonar seus dados em um novo objeto. Isso evita a recriação de objetos caros ou complexos para serem criados.
+
+- Precisar que seu código não dependa de classes concretas para a criação de novos objetos;
+- Quiser evitar explosão de subclasses para objetos muito similares;
+- Quiser evitar a recriação de objetos "caros" ou "complexos".
+
+### Prós
+- Oculta classes concretas do código cliente;
+- Ajuda na criação de objetos caros ou complexos;
+- Evita a explosão de subclasses.
+
+
+### Contras
+- Clonar objetos que que tem referências para outros objetos pode ser super complexo.
